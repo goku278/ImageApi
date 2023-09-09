@@ -214,6 +214,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onFailure(call: Call<NasaImageApiResponse>, t: Throwable) {
                 // Handle the network error
+                applicationUtils.showSnackBar("Data fetching failed")
                 progressDialog.dismiss()
             }
         })

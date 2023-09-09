@@ -34,29 +34,11 @@ class ApplicationUtils {
         this.imageLayout = imageLayout
     }
 
-    /* fun isImageUrl(urlString: String): Boolean {
-         try {
-             val url = URL(urlString)
-             val connection = url.openConnection() as HttpURLConnection
-             connection.requestMethod = "GET"
-             val contentType = connection.contentType
-
-             if (contentType != null && contentType.startsWith("image")) {
-                 // Check if the content type suggests it's an image
-                 return true
-             }
-         } catch (e: Exception) {
-             // Handle exceptions if any occur during the request
-             e.printStackTrace()
-         }
-         return false
-     }*/
-
     fun showSnackBar(msg: String?) {
         val rootView =
             activity.findViewById<View>(android.R.id.content) // or any other View you want to anchor the Snackbar to
 
-        val message = "Please turn on your mobile data or wifi to proceed!"
+        val message = "$msg"
         val duration = Snackbar.LENGTH_SHORT
 
         Snackbar.make(rootView, message, duration).show()
