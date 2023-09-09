@@ -13,7 +13,7 @@ Step-3: Build this project
 
 Step-4: Run this project on your emulator, or in your real device.
 
-Step-5: When the imag is loaded in the app, then there are 3 texts -> Title, Date, Description.
+Step-5: When the image is loaded in the app, then there are 3 texts -> Title, Date, Description.
 
 Step-6: Since the image is shown inside a CardView, and the height is limited and small, so in order to read the
 
